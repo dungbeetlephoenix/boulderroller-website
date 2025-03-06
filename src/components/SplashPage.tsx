@@ -1,13 +1,27 @@
 import React from 'react';
 import '../styles/SplashPage.css';
+import PrismText from './PrismText';
 
 const SplashPage: React.FC = () => {
   return (
     <div className="splash-page">
-      {/* TOP MARQUEE (pause on hover) */}
+      {/* TOP MARQUEE - seamless infinite scroll */}
       <header className="banner banner-top">
         <div className="marquee">
+          {/* Repeat enough times to ensure coverage */}
           <div className="marquee-content">
+            ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★
+            ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★ 
+            ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★
+          </div>
+          <div className="marquee-content">
+            ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★
+            ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★ 
+            ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★
+          </div>
+          <div className="marquee-content">
+            ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★
+            ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★ 
             ★ BOULDERROLLER ★ stack mad DUNG ★ BOULDERROLLER ★ rolling my boulder is soooooooo ★
           </div>
         </div>
@@ -111,9 +125,9 @@ const SplashPage: React.FC = () => {
           </div>
 
           {/* RIGHT COLUMN: LOGO, TEXT, STORE LINKS, ETC. */}
-          <div className="right-column">
+          <div className="right-column has-shader-effect">
             <div className="brand-section">
-              {/* Small logo */}
+              {/* Logo */}
               <div className="logo-wrapper">
                 <img
                   src="/assets/logo.png"
@@ -121,11 +135,11 @@ const SplashPage: React.FC = () => {
                   className="logo-image"
                 />
               </div>
-
-              {/* Metallic/striped big text */}
-              <h1 className="big-loud-text">Boulder Roller</h1>
-
-              {/* Stylized paragraph text */}
+              
+              {/* Change TorusText to PrismText */}
+              <PrismText />
+              
+              {/* Keep your existing stylized text */}
               <p className="stylized-text">
                 A zero‐start physical activity token system. Own your segments with Boulder Roller. When you go for a ride with Boulder Roller your KOMs become your property, and you earn DUNG from the PLEBS riding on your segments. If a DUNG whale rides on your segment they add mad DUNG to your PILE. Go for ripper, claim some KOPs and earn DUNG in your SLEEP
               </p>
@@ -164,12 +178,23 @@ const SplashPage: React.FC = () => {
         </div>
       </main>
 
-      {/* BOTTOM MARQUEE (pause on hover) */}
+      {/* BOTTOM MARQUEE - same seamless approach */}
       <footer className="banner banner-bottom">
         <div className="marquee">
           <div className="marquee-content">
-            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved.
-            ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+          </div>
+          <div className="marquee-content">
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+          </div>
+          <div className="marquee-content">
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
+            &copy; {new Date().getFullYear()} Boulder Roller — All rights reserved. ★ BOULDERROLLER ★ my DUNG PILE is soooooooo ★
           </div>
         </div>
       </footer>
